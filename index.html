@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>爱你呦</title>
-    <link rel="icon" href="logo.png" type="image/png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div id="snow-container"></div>
 
     <div id="dateInputBox">
-        <input type="date" id="startDateInput">
+        <input type="date" id="startDateInput" max="" />
         <button id="confirmBtn">确认</button>
     </div>
 
@@ -19,6 +19,17 @@
     <div id="timeElapsed"></div>
 
     <button id="reselectBtn">重新选择日期</button>
+
+    <!-- 收款二维码弹窗 -->
+<!-- 收款二维码弹窗 -->
+<div id="paymentModal" class="payment-modal">
+    <div class="payment-modal-content">
+        <img src="pnyment.jpg" alt="微信收款码" class="payment-qrcode" />
+        <p class="payment-info">重新选择日期需要支付 1 元永久使用，请问刷新页面。</p>
+        <button id="confirmPaymentBtn" class="confirm-payment-btn">我已付款</button>
+        <button id="closePaymentModal" class="close-modal-btn">关闭</button>
+    </div>
+</div>
 
     <script src="script.js"></script>
 </body>

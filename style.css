@@ -129,3 +129,47 @@ body {
     margin-top: 20px;
     cursor: pointer;
 }
+
+/* 弹窗样式 */
+.payment-modal {
+    display: none;  /* 默认隐藏 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.payment-modal-content {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 80%;
+}
+
+.payment-qrcode {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+.payment-info {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.close-modal-btn {
+    padding: 10px 20px;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
